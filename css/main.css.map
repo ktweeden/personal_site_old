@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,UAAW;EACT,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,6BACjB",
+"sources": ["../scss/partials/_global_styles.scss"],
+"names": [],
+"file": "main.css"
+}

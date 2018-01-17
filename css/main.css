@@ -1,0 +1,5 @@
+.container {
+  display: grid;
+  grid-template: repeat(5, 1fr)/repeat(5, 1fr); }
+
+/*# sourceMappingURL=main.css.map */

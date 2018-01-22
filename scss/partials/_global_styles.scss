@@ -1,4 +1,4 @@
-//@import "_global_variables";
+@import "_global_variables";
 
 
 //Page structure
@@ -7,31 +7,57 @@
   grid-template: repeat(5, 1fr)/ repeat(5, 1fr);
   width: 100%;
   height: 100%;
+  justify-items: center;
 }
+
+//header
+ .header {
+   grid-area: 1/ 1/ span 5/ span 5;
+
+   h1 {
+     color: $primary-colour;
+   }
+ }
 
 
 //Navigation
 .main-navigation {
-  grid-row: 1;
-  grid-column: 2/ span 3;
+  grid-area: 2/ 2/ span 1/ span 3;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav-link {
   list-style-type: none;
 }
 
-//header
- .header {
-   grid: 1/ 1/ span 2/ span 5;
- }
+//Footer
+footer {
+  grid-area: 5/ 1/ span 1/ span 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  align-self: end;
+
+  a {
+    margin-left: $small-gap;
+    font-size: 1.4rem;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+}
+
 
 //Display
 .hidden {
   display: none;
 }
+
 
 
 //Overriding defaults
@@ -58,4 +84,8 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+
 }

@@ -1,9 +1,15 @@
 
-//Fonts
+/**Fonts
 $header-font: ;
 $content-font: ;
-
+**/
 //Colours
-$primary-colour: ;
-$secondary-colour: ;
-$tertiary-colour: ;
+$primary-colour: rgb(252, 33, 198);
+$secondary-colour: rgb(2, 159, 250);
+$tertiary-colour: rgb(11, 230, 200);
+
+
+//Gaps
+$small-gap: 0.5rem;
+$medium-gap: 1rem;
+$large-gap: 2rem;

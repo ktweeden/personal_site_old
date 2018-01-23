@@ -1,24 +1,16 @@
 @import "_global_variables";
 
 
-//Page structure
-.container {
-  display: grid;
-  grid-template: 30% repeat(4, 1fr)/ 10% repeat(3, 1fr) 10%;
-  width: 100%;
-  height: 100%;
-  justify-items: center;
-}
-
 //header
  .header {
-   grid-area: 1/ 1/ span 5/ span 5;
+   width: 100%;
+   text-align: center;
+   padding: $large-gap*2.5 0;
  }
 
 
 //Navigation
 .main-navigation {
-  grid-area: 2/ 2/ span 1/ span 3;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,12 +32,13 @@
 
 //Footer
 footer {
-  grid-area: 5/ 2/ span 1/ span 3;
+  position: fixed;
+  bottom: 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  align-self: end;
+  padding-right: $large-gap;
 
   a {
     margin-left: $small-gap;
@@ -66,6 +59,13 @@ footer {
   display: none;
 }
 
+.right-padding {
+  padding-right: $large-gap;
+}
+
+.left-padding {
+  padding-left: $large-gap;
+}
 
 
 //Overriding defaults
@@ -81,16 +81,22 @@ html, body {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-family: $header-font;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
 }
 
 a {

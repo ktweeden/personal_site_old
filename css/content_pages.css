@@ -66,6 +66,30 @@ a {
 a:visited {
   color: inherit; }
 
+.content-container {
+  display: grid;
+  grid-template: 10% 1fr 10% /10% 40% 40% 10%;
+  grid-template-areas: "lmargin title navigation rmargin" "lmargin content content rmargin" "footer footer footer footer";
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+  .content-container .title {
+    align-self: center;
+    grid-area: title; }
+    .content-container .title h2 {
+      font-family: "Noto Serif", serif; }
+  .content-container .nav-bar {
+    grid-area: navigation;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-self: center; }
+  .content-container .content {
+    grid-area: content; }
+  .content-container footer {
+    grid-area: footer; }
+
 .nav-link {
   list-style-type: none;
   padding: 0 0.5rem;
@@ -134,22 +158,4 @@ a {
 a:visited {
   color: inherit; }
 
-.container {
-  display: grid;
-  grid-template: auto auto 1fr auto/ 10% 1fr 10%;
-  grid-template-areas: "header header header" "lmargin nav rmargin" "lmargin content rmargin" "footer footer footer"; }
-  .container .header {
-    grid-area: header;
-    width: 100%;
-    text-align: center;
-    padding: 5rem 0; }
-  .container .main-navigation {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%; }
-  .container .blog-feed {
-    grid-area: content; }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=content_pages.css.map */

@@ -1,22 +1,8 @@
 @import "_global_variables";
 
 
-//header
- .header {
-   width: 100%;
-   text-align: center;
-   padding: $large-gap*2.5 0;
- }
-
 
 //Navigation
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
 .nav-link {
   list-style-type: none;
   padding: 0 $small-gap;
@@ -32,6 +18,7 @@
 
 //Footer
 footer {
+  grid-area: footer;
   position: fixed;
   bottom: 0px;
   display: flex;
@@ -44,6 +31,7 @@ footer {
     margin-left: $small-gap;
     margin-bottom: $small-gap;
     font-size: 2rem;
+    color: $text-colour;
   }
 
   a:hover {
@@ -101,7 +89,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: $secondary-colour;
 }
 
 a:visited {

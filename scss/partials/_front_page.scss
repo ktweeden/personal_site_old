@@ -30,5 +30,31 @@
 
   .blog-feed {
     grid-area: content;
+
+    .blog-snippet {
+      display: flex;
+      padding: $medium-gap 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .blog-title {
+        order: 1;
+        flex: 1;
+      }
+
+      .blog-blurb {
+        order: 2;
+        width: 100%;
+        flex: 3;
+      }
+
+      time {
+        color: $primary-colour;
+        font-size: 0.8rem;
+        order: 3;
+        width: 100%;
+        text-align: right;
+      }
+    }
   }
 }

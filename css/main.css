@@ -153,5 +153,23 @@ a:visited {
     width: 100%; }
   .container .blog-feed {
     grid-area: content; }
+    .container .blog-feed .blog-snippet {
+      display: flex;
+      padding: 1rem 0;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .container .blog-feed .blog-snippet .blog-title {
+        order: 1;
+        flex: 1; }
+      .container .blog-feed .blog-snippet .blog-blurb {
+        order: 2;
+        width: 100%;
+        flex: 3; }
+      .container .blog-feed .blog-snippet time {
+        color: #029ffa;
+        font-size: 0.8rem;
+        order: 3;
+        width: 100%;
+        text-align: right; }
 
 /*# sourceMappingURL=main.css.map */

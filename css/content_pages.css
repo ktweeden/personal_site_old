@@ -4,7 +4,8 @@
   text-transform: lowercase; }
   .nav-link a:hover {
     color: #fc21c6;
-    transition: 0.5s; }
+    transition: 0.5s;
+    text-decoration: none; }
 
 footer {
   grid-area: footer;
@@ -86,7 +87,8 @@ a:visited {
     width: 100%;
     align-self: center; }
   .content-container .content {
-    grid-area: content; }
+    grid-area: content;
+    padding: 1rem 4rem; }
   .content-container footer {
     grid-area: footer; }
 
@@ -96,7 +98,8 @@ a:visited {
   text-transform: lowercase; }
   .nav-link a:hover {
     color: #fc21c6;
-    transition: 0.5s; }
+    transition: 0.5s;
+    text-decoration: none; }
 
 footer {
   grid-area: footer;

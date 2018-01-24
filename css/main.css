@@ -4,7 +4,8 @@
   text-transform: lowercase; }
   .nav-link a:hover {
     color: #fc21c6;
-    transition: 0.5s; }
+    transition: 0.5s;
+    text-decoration: none; }
 
 footer {
   grid-area: footer;
@@ -72,7 +73,8 @@ a:visited {
   text-transform: lowercase; }
   .nav-link a:hover {
     color: #fc21c6;
-    transition: 0.5s; }
+    transition: 0.5s;
+    text-decoration: none; }
 
 footer {
   grid-area: footer;

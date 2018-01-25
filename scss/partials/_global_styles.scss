@@ -46,6 +46,11 @@ footer {
   a {
     font-size: 2rem;
     margin-bottom: $small-gap;
+    color: $text-colour;
+
+    a:visited {
+      color: $text-colour;
+    }
 
     @include mq-web-layout {
       color: $text-colour;
@@ -117,9 +122,4 @@ h3 {
   font-size: 1.2rem;
   padding: 0;
   margin: 0;
-}
-
-
-a:visited {
-  color: inherit;
 }

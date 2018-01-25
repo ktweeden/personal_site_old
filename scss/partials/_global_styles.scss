@@ -6,8 +6,16 @@
 //Navigation
 .nav-link {
   list-style-type: none;
-  padding: 0 $small-gap;
   text-transform: lowercase;
+
+  @include mq-web-layout {
+    padding: 0 $small-gap;
+  };
+
+  @include mq-phone-layout{
+    font-size: 2.5rem;
+    padding: 2rem 2rem 0 0rem;
+  };
 
 
   a:hover {
@@ -25,21 +33,38 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: $large-gap;
+
+  @include mq-web-layout {
+    justify-content: flex-end;
+  };
+
+  @include mq-phone-layout {
+    justify-content: space-around;
+  };
 
   a {
     margin-left: $small-gap;
     margin-bottom: $small-gap;
-    font-size: 2rem;
-    color: $text-colour;
+
+    @include mq-web-layout {
+      font-size: 2rem;
+      color: $text-colour;
+    };
+
+    @include mq-phone-layout {
+      font-size: 4rem;
+      color: $accent-colour;
+    };
   }
 
-  a:hover {
-    color: $accent-colour;
-    transition: 0.3s;
-  }
+  @include mq-web-layout {
+    a:hover {
+      color: $accent-colour;
+      transition: 0.3s;
+    }
+  };
 
 }
 
@@ -84,9 +109,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
   margin: 0;
+
+  @include mq-web-layout {
+    font-size: 1.4rem;
+  };
+  @include mq-phone-layout {
+    font-size: 4rem;
+  }
 }
 
 h3 {

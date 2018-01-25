@@ -1,7 +1,13 @@
 .nav-link {
   list-style-type: none;
-  padding: 0 0.5rem;
   text-transform: lowercase; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .nav-link {
+      padding: 0 0.5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .nav-link {
+      font-size: 2.5rem;
+      padding: 2rem 2rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -13,17 +19,29 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: 2rem; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer {
+      justify-content: flex-end; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    footer {
+      justify-content: space-around; } }
   footer a {
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: black; }
-  footer a:hover {
-    color: #fc21c6;
-    transition: 0.3s; }
+    margin-bottom: 0.5rem; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      footer a {
+        font-size: 2rem;
+        color: black; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      footer a {
+        font-size: 4rem;
+        color: #fc21c6; } }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer a:hover {
+      color: #fc21c6;
+      transition: 0.3s; } }
 
 .hidden {
   display: none; }
@@ -56,9 +74,14 @@ h1 {
       font-size: 11rem; } }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h2 {
+      font-size: 1.4rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h2 {
+      font-size: 4rem; } }
 
 h3 {
   font-size: 1.2rem;
@@ -105,8 +128,14 @@ a:visited {
 
 .nav-link {
   list-style-type: none;
-  padding: 0 0.5rem;
   text-transform: lowercase; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .nav-link {
+      padding: 0 0.5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .nav-link {
+      font-size: 2.5rem;
+      padding: 2rem 2rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -118,17 +147,29 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: 2rem; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer {
+      justify-content: flex-end; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    footer {
+      justify-content: space-around; } }
   footer a {
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: black; }
-  footer a:hover {
-    color: #fc21c6;
-    transition: 0.3s; }
+    margin-bottom: 0.5rem; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      footer a {
+        font-size: 2rem;
+        color: black; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      footer a {
+        font-size: 4rem;
+        color: #fc21c6; } }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer a:hover {
+      color: #fc21c6;
+      transition: 0.3s; } }
 
 .hidden {
   display: none; }
@@ -161,9 +202,14 @@ h1 {
       font-size: 11rem; } }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h2 {
+      font-size: 1.4rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h2 {
+      font-size: 4rem; } }
 
 h3 {
   font-size: 1.2rem;

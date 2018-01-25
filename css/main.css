@@ -1,7 +1,13 @@
 .nav-link {
   list-style-type: none;
-  padding: 0 0.5rem;
   text-transform: lowercase; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .nav-link {
+      padding: 0 0.5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .nav-link {
+      font-size: 2.5rem;
+      padding: 2rem 2rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -13,17 +19,29 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: 2rem; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer {
+      justify-content: flex-end; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    footer {
+      justify-content: space-around; } }
   footer a {
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: black; }
-  footer a:hover {
-    color: #fc21c6;
-    transition: 0.3s; }
+    margin-bottom: 0.5rem; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      footer a {
+        font-size: 2rem;
+        color: black; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      footer a {
+        font-size: 4rem;
+        color: #fc21c6; } }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer a:hover {
+      color: #fc21c6;
+      transition: 0.3s; } }
 
 .hidden {
   display: none; }
@@ -56,9 +74,14 @@ h1 {
       font-size: 11rem; } }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h2 {
+      font-size: 1.4rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h2 {
+      font-size: 4rem; } }
 
 h3 {
   font-size: 1.2rem;
@@ -70,8 +93,14 @@ a:visited {
 
 .nav-link {
   list-style-type: none;
-  padding: 0 0.5rem;
   text-transform: lowercase; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .nav-link {
+      padding: 0 0.5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .nav-link {
+      font-size: 2.5rem;
+      padding: 2rem 2rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -83,17 +112,29 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: 2rem; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer {
+      justify-content: flex-end; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    footer {
+      justify-content: space-around; } }
   footer a {
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: black; }
-  footer a:hover {
-    color: #fc21c6;
-    transition: 0.3s; }
+    margin-bottom: 0.5rem; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      footer a {
+        font-size: 2rem;
+        color: black; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      footer a {
+        font-size: 4rem;
+        color: #fc21c6; } }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer a:hover {
+      color: #fc21c6;
+      transition: 0.3s; } }
 
 .hidden {
   display: none; }
@@ -126,9 +167,14 @@ h1 {
       font-size: 11rem; } }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h2 {
+      font-size: 1.4rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h2 {
+      font-size: 4rem; } }
 
 h3 {
   font-size: 1.2rem;
@@ -140,8 +186,13 @@ a:visited {
 
 .container {
   display: grid;
-  grid-template: auto auto 1fr auto/ 10% 1fr 10%;
-  grid-template-areas: "header header header" "lmargin nav rmargin" "lmargin content rmargin" "footer footer footer"; }
+  grid-template: auto auto 1fr auto/ 10% 1fr 10%; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .container {
+      grid-template-areas: "header header header" "lmargin nav rmargin" "lmargin content rmargin" "footer footer footer"; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .container {
+      grid-template-areas: "nav nav nav" "header header header" "lmargin content rmargin" "footer footer footer"; } }
   .container .header {
     grid-area: header;
     width: 100%;
@@ -151,27 +202,47 @@ a:visited {
     grid-area: nav;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     width: 100%; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      .container .main-navigation {
+        justify-content: center; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      .container .main-navigation {
+        justify-content: flex-end; } }
   .container .blog-feed {
     grid-area: content; }
     .container .blog-feed .blog-snippet {
       display: flex;
-      padding: 1rem 0;
-      flex-direction: row;
-      flex-wrap: wrap; }
+      padding: 1rem 0; }
+      @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+        .container .blog-feed .blog-snippet {
+          flex-direction: row;
+          flex-wrap: wrap; } }
+      @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+        .container .blog-feed .blog-snippet {
+          flex-direction: column; } }
       .container .blog-feed .blog-snippet .blog-title {
         order: 1;
         flex: 1; }
+        @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+          .container .blog-feed .blog-snippet .blog-title {
+            color: #0be6c8; } }
         .container .blog-feed .blog-snippet .blog-title h2:hover {
           color: #0be6c8;
           transition: 0.3s; }
-      .container .blog-feed .blog-snippet .blog-blurb {
+      .container .blog-feed .blog-snippet .blog-blurb-long {
         order: 2;
         width: 100%;
         flex: 3; }
         @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
-          .container .blog-feed .blog-snippet .blog-blurb {
+          .container .blog-feed .blog-snippet .blog-blurb-long {
+            display: none; } }
+      .container .blog-feed .blog-snippet .blog-blurb-short {
+        order: 2;
+        width: 100%;
+        flex: 2; }
+        @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+          .container .blog-feed .blog-snippet .blog-blurb-short {
             display: none; } }
       .container .blog-feed .blog-snippet time {
         color: #029ffa;

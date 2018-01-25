@@ -35,7 +35,6 @@ footer {
         margin-left: 0.5rem; } }
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
       footer a {
-        color: #fc21c6;
         margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
@@ -122,7 +121,6 @@ footer {
         margin-left: 0.5rem; } }
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
       footer a {
-        color: #fc21c6;
         margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {

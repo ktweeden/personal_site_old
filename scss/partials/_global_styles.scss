@@ -53,7 +53,6 @@ footer {
     };
 
     @include mq-phone-layout {
-      color: $accent-colour;
       margin-top: $small-gap;
     };
   }

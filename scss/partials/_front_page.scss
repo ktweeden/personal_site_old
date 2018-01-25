@@ -40,6 +40,12 @@
       .blog-title {
         order: 1;
         flex: 1;
+
+
+        h2:hover {
+          color: $secondary-colour;
+          transition: 0.3s;
+        }
       }
 
       .blog-blurb {

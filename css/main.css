@@ -161,6 +161,9 @@ a:visited {
       .container .blog-feed .blog-snippet .blog-title {
         order: 1;
         flex: 1; }
+        .container .blog-feed .blog-snippet .blog-title h2:hover {
+          color: #0be6c8;
+          transition: 0.3s; }
       .container .blog-feed .blog-snippet .blog-blurb {
         order: 2;
         width: 100%;

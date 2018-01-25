@@ -35,6 +35,12 @@
   .content {
     grid-area: content;
     padding: $medium-gap $large-gap*2;
+
+    .line {
+      border: 1px dashed $accent-colour;
+      width: 100%;
+      margin: $large-gap 0;
+    }
   }
 
   footer {

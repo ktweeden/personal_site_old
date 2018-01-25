@@ -19,7 +19,7 @@
     @include mq-phone-layout {
       grid-template-areas:
         "nav nav nav"
-        "header header header"
+        "lmargin header rmargin"
         "lmargin content rmargin"
         "footer footer footer";
     };
@@ -28,7 +28,14 @@
      grid-area: header;
      width: 100%;
      text-align: center;
-     padding: $large-gap*2.5 0;
+
+     @include mq-web-layout {
+       padding: $large-gap*2.5 0;
+     };
+
+     @include mq-phone-layout {
+       margin: $large-gap 0;
+     };
    }
 
 
@@ -52,15 +59,16 @@
 
     .blog-snippet {
       display: flex;
-      padding: $medium-gap 0;
 
       @include mq-web-layout {
         flex-direction: row;
         flex-wrap: wrap;
+        padding: $medium-gap 0;
       };
 
       @include mq-phone-layout {
         flex-direction: column;
+        padding-bottom: $medium-gap;
       };
 
 

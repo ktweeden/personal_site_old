@@ -6,8 +6,7 @@
       padding: 0 0.5rem; } }
   @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
     .nav-link {
-      font-size: 2.5rem;
-      padding: 2rem 2rem 0 0rem; } }
+      padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -28,16 +27,16 @@ footer {
     footer {
       justify-content: space-around; } }
   footer a {
-    margin-left: 0.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem; }
     @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
       footer a {
-        font-size: 2rem;
-        color: black; } }
+        color: black;
+        margin-left: 0.5rem; } }
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
       footer a {
-        font-size: 4rem;
-        color: #fc21c6; } }
+        color: #fc21c6;
+        margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
       color: #fc21c6;
@@ -46,9 +45,9 @@ footer {
 .hidden {
   display: none; }
 
-.right-padding {
-  padding-right: 2rem; }
-
+@media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+  .right-padding {
+    padding-right: 2rem; } }
 .left-padding {
   padding-left: 2rem; }
 
@@ -71,17 +70,12 @@ h1 {
       font-size: 5rem; } }
   @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
     h1 {
-      font-size: 11rem; } }
+      font-size: 3.4rem; } }
 
 h2 {
   padding: 0;
-  margin: 0; }
-  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
-    h2 {
-      font-size: 1.4rem; } }
-  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
-    h2 {
-      font-size: 4rem; } }
+  margin: 0;
+  font-size: 1.4rem; }
 
 h3 {
   font-size: 1.2rem;
@@ -99,8 +93,7 @@ a:visited {
       padding: 0 0.5rem; } }
   @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
     .nav-link {
-      font-size: 2.5rem;
-      padding: 2rem 2rem 0 0rem; } }
+      padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -121,16 +114,16 @@ footer {
     footer {
       justify-content: space-around; } }
   footer a {
-    margin-left: 0.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem; }
     @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
       footer a {
-        font-size: 2rem;
-        color: black; } }
+        color: black;
+        margin-left: 0.5rem; } }
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
       footer a {
-        font-size: 4rem;
-        color: #fc21c6; } }
+        color: #fc21c6;
+        margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
       color: #fc21c6;
@@ -139,9 +132,9 @@ footer {
 .hidden {
   display: none; }
 
-.right-padding {
-  padding-right: 2rem; }
-
+@media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+  .right-padding {
+    padding-right: 2rem; } }
 .left-padding {
   padding-left: 2rem; }
 
@@ -164,17 +157,12 @@ h1 {
       font-size: 5rem; } }
   @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
     h1 {
-      font-size: 11rem; } }
+      font-size: 3.4rem; } }
 
 h2 {
   padding: 0;
-  margin: 0; }
-  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
-    h2 {
-      font-size: 1.4rem; } }
-  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
-    h2 {
-      font-size: 4rem; } }
+  margin: 0;
+  font-size: 1.4rem; }
 
 h3 {
   font-size: 1.2rem;
@@ -192,12 +180,17 @@ a:visited {
       grid-template-areas: "header header header" "lmargin nav rmargin" "lmargin content rmargin" "footer footer footer"; } }
   @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
     .container {
-      grid-template-areas: "nav nav nav" "header header header" "lmargin content rmargin" "footer footer footer"; } }
+      grid-template-areas: "nav nav nav" "lmargin header rmargin" "lmargin content rmargin" "footer footer footer"; } }
   .container .header {
     grid-area: header;
     width: 100%;
-    text-align: center;
-    padding: 5rem 0; }
+    text-align: center; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      .container .header {
+        padding: 5rem 0; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      .container .header {
+        margin: 2rem 0; } }
   .container .main-navigation {
     grid-area: nav;
     display: flex;
@@ -212,15 +205,16 @@ a:visited {
   .container .blog-feed {
     grid-area: content; }
     .container .blog-feed .blog-snippet {
-      display: flex;
-      padding: 1rem 0; }
+      display: flex; }
       @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
         .container .blog-feed .blog-snippet {
           flex-direction: row;
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+          padding: 1rem 0; } }
       @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
         .container .blog-feed .blog-snippet {
-          flex-direction: column; } }
+          flex-direction: column;
+          padding-bottom: 1rem; } }
       .container .blog-feed .blog-snippet .blog-title {
         order: 1;
         flex: 1; }

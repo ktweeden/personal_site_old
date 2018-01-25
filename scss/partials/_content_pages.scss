@@ -20,22 +20,27 @@
   @include mq-phone-layout {
     grid-template: auto auto 1fr 10% /10% 40% 40% 10%;
     grid-template-areas:
-      "ltmargin ltmargin navigation rmargin"
+      "ltmargin ltmargin navigation navigation"
       "lmargin title title rmargin"
       "lmargin content content rmargin"
       "footer footer footer footer";
   };
 
+
   .title {
     align-self: center;
     grid-area: title;
 
-    @include mq-phone-layout {
-      padding: 1rem $large-gap*2 0 $large-gap*2;
+    @include mq-web-layout {
+      margin-top: $medium-gap;
     };
 
     h2 {
       font-family: $header-font;
+
+      @include mq-phone-layout {
+        font-size: 3rem;
+      };
     }
   }
 
@@ -47,15 +52,32 @@
     width: 100%;
     align-self: center;
 
+    @include mq-web-layout {
+      margin-top: $medium-gap;
+    };
+
     a {
       text-decoration: none;
       color: $text-colour;
     }
   }
 
+
   .content {
     grid-area: content;
-    padding: 0 $large-gap*2 $large-gap*2 $large-gap*2;
+
+    @include mq-web-layout {
+
+      padding: 0 $large-gap*2 $large-gap*2 $large-gap*2;
+
+      &.small-content {
+        padding-top: $large-gap*2;
+      }
+    };
+
+    @include mq-phone-layout {
+      padding: 0 0 $large-gap*2 0;
+    };
 
     .line {
       border: 1px dashed $accent-colour;
@@ -69,9 +91,6 @@
     }
   }
 
-  @include mq-phone-layout {
-    font-size: 2rem;
-  };
 
   footer {
     grid-area: footer;

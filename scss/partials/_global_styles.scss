@@ -13,8 +13,7 @@
   };
 
   @include mq-phone-layout{
-    font-size: 2.5rem;
-    padding: 2rem 2rem 0 0rem;
+    padding: 1rem 1rem 0 0rem;
   };
 
 
@@ -45,17 +44,17 @@ footer {
   };
 
   a {
-    margin-left: $small-gap;
+    font-size: 2rem;
     margin-bottom: $small-gap;
 
     @include mq-web-layout {
-      font-size: 2rem;
       color: $text-colour;
+      margin-left: $small-gap;
     };
 
     @include mq-phone-layout {
-      font-size: 4rem;
       color: $accent-colour;
+      margin-top: $small-gap;
     };
   }
 
@@ -74,14 +73,15 @@ footer {
   display: none;
 }
 
-.right-padding {
-  padding-right: $large-gap;
-}
+@include mq-web-layout {
+  .right-padding {
+    padding-right: $large-gap;
+  }
+};
 
 .left-padding {
   padding-left: $large-gap;
 }
-
 
 //Overriding defaults
 html, body {
@@ -101,7 +101,7 @@ h1 {
     font-size: 5rem;
   };
   @include mq-phone-layout {
-    font-size: 11rem;
+    font-size: 3.4rem;
   }
   font-family: $header-font;
   padding: 0;
@@ -111,13 +111,7 @@ h1 {
 h2 {
   padding: 0;
   margin: 0;
-
-  @include mq-web-layout {
-    font-size: 1.4rem;
-  };
-  @include mq-phone-layout {
-    font-size: 4rem;
-  }
+  font-size: 1.4rem;
 }
 
 h3 {

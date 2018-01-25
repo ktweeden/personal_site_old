@@ -5,19 +5,34 @@
 
 .content-container {
   display: grid;
-  grid-template: 10% 1fr 10% /10% 40% 40% 10%;
-  grid-template-areas:
-    "lmargin title navigation rmargin"
-    "lmargin content content rmargin"
-    "footer footer footer footer";
   width: 100%;
   height: 100%;
   justify-content: center;
 
+  @include mq-web-layout {
+    grid-template: auto 1fr 10% /10% 40% 40% 10%;
+    grid-template-areas:
+      "lmargin title navigation rmargin"
+      "lmargin content content rmargin"
+      "footer footer footer footer";
+  };
+
+  @include mq-phone-layout {
+    grid-template: auto auto 1fr 10% /10% 40% 40% 10%;
+    grid-template-areas:
+      "ltmargin ltmargin navigation rmargin"
+      "lmargin title title rmargin"
+      "lmargin content content rmargin"
+      "footer footer footer footer";
+  };
 
   .title {
     align-self: center;
     grid-area: title;
+
+    @include mq-phone-layout {
+      padding: 1rem $large-gap*2 0 $large-gap*2;
+    };
 
     h2 {
       font-family: $header-font;
@@ -40,7 +55,7 @@
 
   .content {
     grid-area: content;
-    padding: $medium-gap $large-gap*2;
+    padding: 0 $large-gap*2 $large-gap*2 $large-gap*2;
 
     .line {
       border: 1px dashed $accent-colour;
@@ -54,7 +69,14 @@
     }
   }
 
+  @include mq-phone-layout {
+    font-size: 2rem;
+  };
+
   footer {
     grid-area: footer;
+    @include mq-phone-layout {
+      background-color: white;
+    };
   }
 }

@@ -60,10 +60,6 @@ h3 {
   padding: 0;
   margin: 0; }
 
-a {
-  text-decoration: none;
-  color: #0be6c8; }
-
 a:visited {
   color: inherit; }
 
@@ -86,6 +82,9 @@ a:visited {
     justify-content: flex-end;
     width: 100%;
     align-self: center; }
+    .content-container .nav-bar a {
+      text-decoration: none;
+      color: black; }
   .content-container .content {
     grid-area: content;
     padding: 1rem 4rem; }
@@ -93,6 +92,9 @@ a:visited {
       border: 1px dashed #fc21c6;
       width: 100%;
       margin: 2rem 0; }
+    .content-container .content a {
+      text-decoration: none;
+      color: #0be6c8; }
   .content-container footer {
     grid-area: footer; }
 
@@ -157,10 +159,6 @@ h3 {
   font-size: 1.2rem;
   padding: 0;
   margin: 0; }
-
-a {
-  text-decoration: none;
-  color: #0be6c8; }
 
 a:visited {
   color: inherit; }

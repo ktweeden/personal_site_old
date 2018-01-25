@@ -37,6 +37,7 @@
       flex-direction: row;
       flex-wrap: wrap;
 
+
       .blog-title {
         order: 1;
         flex: 1;
@@ -62,5 +63,10 @@
         text-align: right;
       }
     }
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-colour;
   }
 }

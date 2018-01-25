@@ -30,6 +30,11 @@
     justify-content: flex-end;
     width: 100%;
     align-self: center;
+
+    a {
+      text-decoration: none;
+      color: $text-colour;
+    }
   }
 
   .content {
@@ -40,6 +45,11 @@
       border: 1px dashed $accent-colour;
       width: 100%;
       margin: $large-gap 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary-colour;
     }
   }
 

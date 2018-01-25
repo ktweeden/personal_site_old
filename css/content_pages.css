@@ -45,10 +45,15 @@ html, body {
   color: black; }
 
 h1 {
-  font-size: 5rem;
   font-family: "Noto Serif", serif;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h1 {
+      font-size: 5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h1 {
+      font-size: 11rem; } }
 
 h2 {
   font-size: 1.4rem;
@@ -145,10 +150,15 @@ html, body {
   color: black; }
 
 h1 {
-  font-size: 5rem;
   font-family: "Noto Serif", serif;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h1 {
+      font-size: 5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h1 {
+      font-size: 11rem; } }
 
 h2 {
   font-size: 1.4rem;

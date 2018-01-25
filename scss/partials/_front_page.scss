@@ -1,5 +1,6 @@
 @import "_global_styles";
 @import "_global_variables";
+@import "_media_queries";
 
 
 
@@ -53,6 +54,10 @@
         order: 2;
         width: 100%;
         flex: 3;
+
+        @include mq-phone-layout {
+          display: none;
+        }
       }
 
       time {

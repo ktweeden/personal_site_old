@@ -1,12 +1,20 @@
 @import "_global_variables";
+@import "_media_queries";
 
 
 
 //Navigation
 .nav-link {
   list-style-type: none;
-  padding: 0 $small-gap;
   text-transform: lowercase;
+
+  @include mq-web-layout {
+    padding: 0 $small-gap;
+  };
+
+  @include mq-phone-layout{
+    padding: 1rem 1rem 0 0rem;
+  };
 
 
   a:hover {
@@ -24,21 +32,38 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: $large-gap;
 
+  @include mq-web-layout {
+    justify-content: flex-end;
+  };
+
+  @include mq-phone-layout {
+    justify-content: space-around;
+  };
+
   a {
-    margin-left: $small-gap;
-    margin-bottom: $small-gap;
     font-size: 2rem;
-    color: $text-colour;
+    margin-bottom: $small-gap;
+
+    @include mq-web-layout {
+      color: $text-colour;
+      margin-left: $small-gap;
+    };
+
+    @include mq-phone-layout {
+      color: $accent-colour;
+      margin-top: $small-gap;
+    };
   }
 
-  a:hover {
-    color: $accent-colour;
-    transition: 0.3s;
-  }
+  @include mq-web-layout {
+    a:hover {
+      color: $accent-colour;
+      transition: 0.3s;
+    }
+  };
 
 }
 
@@ -48,14 +73,15 @@ footer {
   display: none;
 }
 
-.right-padding {
-  padding-right: $large-gap;
-}
+@include mq-web-layout {
+  .right-padding {
+    padding-right: $large-gap;
+  }
+};
 
 .left-padding {
   padding-left: $large-gap;
 }
-
 
 //Overriding defaults
 html, body {
@@ -70,16 +96,22 @@ html, body {
 }
 
 h1 {
-  font-size: 5rem;
+
+  @include mq-web-layout {
+    font-size: 5rem;
+  };
+  @include mq-phone-layout {
+    font-size: 3.4rem;
+  }
   font-family: $header-font;
   padding: 0;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
   margin: 0;
+  font-size: 1.4rem;
 }
 
 h3 {

@@ -1,25 +1,46 @@
 @import "_global_variables";
 @import "_global_styles";
+@import "_media_queries";
 
 
 .content-container {
   display: grid;
-  grid-template: 10% 1fr 10% /10% 40% 40% 10%;
-  grid-template-areas:
-    "lmargin title navigation rmargin"
-    "lmargin content content rmargin"
-    "footer footer footer footer";
   width: 100%;
   height: 100%;
   justify-content: center;
+
+  @include mq-web-layout {
+    grid-template: auto 1fr 10% /10% 40% 40% 10%;
+    grid-template-areas:
+      "lmargin title navigation rmargin"
+      "lmargin content content rmargin"
+      "footer footer footer footer";
+  };
+
+  @include mq-phone-layout {
+    grid-template: auto auto 1fr 10% /10% 40% 40% 10%;
+    grid-template-areas:
+      "ltmargin ltmargin navigation navigation"
+      "lmargin title title rmargin"
+      "lmargin content content rmargin"
+      "footer footer footer footer";
+  };
 
 
   .title {
     align-self: center;
     grid-area: title;
 
+    @include mq-web-layout {
+      margin-top: $medium-gap;
+    };
+
     h2 {
       font-family: $header-font;
+
+      @include mq-phone-layout {
+        font-size: 3rem;
+      };
     }
   }
 
@@ -31,15 +52,32 @@
     width: 100%;
     align-self: center;
 
+    @include mq-web-layout {
+      margin-top: $medium-gap;
+    };
+
     a {
       text-decoration: none;
       color: $text-colour;
     }
   }
 
+
   .content {
     grid-area: content;
-    padding: $medium-gap $large-gap*2;
+
+    @include mq-web-layout {
+
+      padding: 0 $large-gap*2 $large-gap*2 $large-gap*2;
+
+      &.small-content {
+        padding-top: $large-gap*2;
+      }
+    };
+
+    @include mq-phone-layout {
+      padding: 0 0 $large-gap*2 0;
+    };
 
     .line {
       border: 1px dashed $accent-colour;
@@ -53,7 +91,11 @@
     }
   }
 
+
   footer {
     grid-area: footer;
+    @include mq-phone-layout {
+      background-color: white;
+    };
   }
 }

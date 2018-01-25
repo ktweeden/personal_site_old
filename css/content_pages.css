@@ -1,7 +1,12 @@
 .nav-link {
   list-style-type: none;
-  padding: 0 0.5rem;
   text-transform: lowercase; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .nav-link {
+      padding: 0 0.5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .nav-link {
+      padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -13,24 +18,36 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: 2rem; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer {
+      justify-content: flex-end; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    footer {
+      justify-content: space-around; } }
   footer a {
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
     font-size: 2rem;
-    color: black; }
-  footer a:hover {
-    color: #fc21c6;
-    transition: 0.3s; }
+    margin-bottom: 0.5rem; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      footer a {
+        color: black;
+        margin-left: 0.5rem; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      footer a {
+        color: #fc21c6;
+        margin-top: 0.5rem; } }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer a:hover {
+      color: #fc21c6;
+      transition: 0.3s; } }
 
 .hidden {
   display: none; }
 
-.right-padding {
-  padding-right: 2rem; }
-
+@media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+  .right-padding {
+    padding-right: 2rem; } }
 .left-padding {
   padding-left: 2rem; }
 
@@ -45,15 +62,20 @@ html, body {
   color: black; }
 
 h1 {
-  font-size: 5rem;
   font-family: "Noto Serif", serif;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h1 {
+      font-size: 5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h1 {
+      font-size: 3.4rem; } }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.4rem; }
 
 h3 {
   font-size: 1.2rem;
@@ -65,16 +87,28 @@ a:visited {
 
 .content-container {
   display: grid;
-  grid-template: 10% 1fr 10% /10% 40% 40% 10%;
-  grid-template-areas: "lmargin title navigation rmargin" "lmargin content content rmargin" "footer footer footer footer";
   width: 100%;
   height: 100%;
   justify-content: center; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .content-container {
+      grid-template: auto 1fr 10% /10% 40% 40% 10%;
+      grid-template-areas: "lmargin title navigation rmargin" "lmargin content content rmargin" "footer footer footer footer"; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .content-container {
+      grid-template: auto auto 1fr 10% /10% 40% 40% 10%;
+      grid-template-areas: "ltmargin ltmargin navigation navigation" "lmargin title title rmargin" "lmargin content content rmargin" "footer footer footer footer"; } }
   .content-container .title {
     align-self: center;
     grid-area: title; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      .content-container .title {
+        margin-top: 1rem; } }
     .content-container .title h2 {
       font-family: "Noto Serif", serif; }
+      @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+        .content-container .title h2 {
+          font-size: 3rem; } }
   .content-container .nav-bar {
     grid-area: navigation;
     display: flex;
@@ -82,12 +116,22 @@ a:visited {
     justify-content: flex-end;
     width: 100%;
     align-self: center; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      .content-container .nav-bar {
+        margin-top: 1rem; } }
     .content-container .nav-bar a {
       text-decoration: none;
       color: black; }
   .content-container .content {
-    grid-area: content;
-    padding: 1rem 4rem; }
+    grid-area: content; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      .content-container .content {
+        padding: 0 4rem 4rem 4rem; }
+        .content-container .content.small-content {
+          padding-top: 4rem; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      .content-container .content {
+        padding: 0 0 4rem 0; } }
     .content-container .content .line {
       border: 1px dashed #fc21c6;
       width: 100%;
@@ -97,11 +141,19 @@ a:visited {
       color: #0be6c8; }
   .content-container footer {
     grid-area: footer; }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      .content-container footer {
+        background-color: white; } }
 
 .nav-link {
   list-style-type: none;
-  padding: 0 0.5rem;
   text-transform: lowercase; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    .nav-link {
+      padding: 0 0.5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    .nav-link {
+      padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
     color: #fc21c6;
     transition: 0.5s;
@@ -113,24 +165,36 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
   padding-right: 2rem; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer {
+      justify-content: flex-end; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    footer {
+      justify-content: space-around; } }
   footer a {
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
     font-size: 2rem;
-    color: black; }
-  footer a:hover {
-    color: #fc21c6;
-    transition: 0.3s; }
+    margin-bottom: 0.5rem; }
+    @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+      footer a {
+        color: black;
+        margin-left: 0.5rem; } }
+    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+      footer a {
+        color: #fc21c6;
+        margin-top: 0.5rem; } }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    footer a:hover {
+      color: #fc21c6;
+      transition: 0.3s; } }
 
 .hidden {
   display: none; }
 
-.right-padding {
-  padding-right: 2rem; }
-
+@media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+  .right-padding {
+    padding-right: 2rem; } }
 .left-padding {
   padding-left: 2rem; }
 
@@ -145,15 +209,20 @@ html, body {
   color: black; }
 
 h1 {
-  font-size: 5rem;
   font-family: "Noto Serif", serif;
   padding: 0;
   margin: 0; }
+  @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
+    h1 {
+      font-size: 5rem; } }
+  @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+    h1 {
+      font-size: 3.4rem; } }
 
 h2 {
-  font-size: 1.4rem;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.4rem; }
 
 h3 {
   font-size: 1.2rem;

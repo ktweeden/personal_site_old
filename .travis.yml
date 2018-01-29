@@ -6,9 +6,9 @@ script:
   - "sass scss/content_pages.scss:css/content_pages.scss"
 
 deploy:
-provider: pages
-skip-cleanup: true
-github-token: $GITHUB_TOKEN
-keep-history: true
-on:
-  branch: github-page
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: github-page

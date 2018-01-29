@@ -2,5 +2,5 @@ language: generic
 before_install: gem install sass
 script:
   - pwd
-  - "sass scss/main.scss: css/main.css"
-  - "sass scss/content_pages.scss: css/content_pages.scss"
+  - "sass scss/main.scss:css/main.css"
+  - "sass scss/content_pages.scss:css/content_pages.scss"

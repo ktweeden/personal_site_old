@@ -1,6 +1,14 @@
 language: generic
 install: gem install sass
 script:
-  - pwd
+  - env
   - "sass scss/main.scss:css/main.css"
   - "sass scss/content_pages.scss:css/content_pages.scss"
+
+deploy:
+provider: pages
+skip-cleanup: true
+github-token: $GITHUB_TOKEN
+keep-history: true
+on:
+  branch: github-page

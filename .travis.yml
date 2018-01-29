@@ -11,4 +11,4 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: github-page
+    branch: master

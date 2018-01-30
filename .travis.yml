@@ -1,3 +1,8 @@
+general:
+  branches:
+    only:
+      - prod
+
 language: generic
 install: gem install sass
 script:

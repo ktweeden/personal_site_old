@@ -1,0 +1,19 @@
+general:
+  branches:
+    only:
+      - prod
+
+language: generic
+install: gem install sass
+script:
+  - env
+  - "sass scss/main.scss:css/main.css"
+  - "sass scss/content_pages.scss:css/content_pages.scss"
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master

@@ -57,6 +57,10 @@
   .blog-feed {
     grid-area: content;
 
+    @include mq-phone-layout {
+      padding-bottom: $large-gap*2;
+    };
+
     .blog-snippet {
       display: flex;
 
@@ -120,6 +124,13 @@
   a {
     text-decoration: none;
     color: $text-colour;
+  }
+
+  footer {
+    grid-area: footer;
+    @include mq-phone-layout {
+      background-color: white;
+    };
   }
 
 }

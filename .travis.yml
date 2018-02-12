@@ -1,10 +1,5 @@
-general:
-  branches:
-    only:
-      - prod
-
-language: generic
-install: gem install sass
+language: javascript
+install: npm install node-sass
 script:
   - env
   - "sass scss/main.scss:css/main.css"

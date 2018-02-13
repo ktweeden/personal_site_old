@@ -50,6 +50,7 @@ footer {
 @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
   .right-padding {
     padding-right: 2rem; } }
+
 .left-padding {
   padding-left: 2rem; }
 
@@ -136,6 +137,7 @@ footer {
 @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
   .right-padding {
     padding-right: 2rem; } }
+
 .left-padding {
   padding-left: 2rem; }
 
@@ -253,5 +255,3 @@ h3 {
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
       .container footer {
         background-color: white; } }
-
-/*# sourceMappingURL=main.css.map */

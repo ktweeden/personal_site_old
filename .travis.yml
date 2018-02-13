@@ -3,8 +3,8 @@ install: npm install node-sass
 script:
   - env
   - node build/template_render
-  - "sass scss/main.scss:css/main.css"
-  - "sass scss/content_pages.scss:css/content_pages.scss"
+  - ./node_modules/.bin/node-sass scss/main.scss css/main.css
+  - ./node_modules/.bin/node-sass scss/content_pages.scss css/content_pages.scss
 
 deploy:
   provider: pages

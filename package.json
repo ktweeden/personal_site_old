@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ktweeden/personal_site#readme",
   "devDependencies": {
+    "node-sass": "^4.7.2",
     "nunjucks": "^3.0.1"
   }
 }

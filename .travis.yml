@@ -1,5 +1,5 @@
 language: javascript
-install: npm install node-sass
+install: npm install
 script:
   - env
   - node build/template_render

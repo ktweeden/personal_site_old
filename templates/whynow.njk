@@ -2,32 +2,25 @@
 <html>
   <head>
     {% include "partials/_content_head.njk" %}
+    {% for content in contentList %}
+      {% if content.title == "Why This, Why Now?"%}
+      <title>Why This, Why Now?</title>
+      <meta name="description" content="{{content.short_blurb}}" />
 
-    <title>Why This, Why Now?</title>
-    <meta name="description" content="A year ago my day job involved listening to other people talk about
-    all the reasons their current job was unsatisfying and why retraining
-    as a software developer was the right move for them." />
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="{{content.title}}">
+      <meta name="twitter:description" content="{{content.long_blurb}}">
+      <meta name="twitter:creator" content="@ktweeden">
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Why This, Why Now?">
-    <meta name="twitter:description" content="A year ago my day job involved listening to other people talk about
-    all the reasons their current job was unsatisfying and why retraining
-    as a software developer was the right move for them. For some people
-    it was about job security, others wanted a job with more of a
-    challenge, or more flexibility, or more money.">
-    <meta name="twitter:creator" content="@ktweeden">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Why This, Why Now?" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.kate-preston.co.uk/whynow.html" />
-    <meta property="og:description" content="A year ago my day job involved listening to other people talk about
-    all the reasons their current job was unsatisfying and why retraining
-    as a software developer was the right move for them. For some people
-    it was about job security, others wanted a job with more of a
-    challenge, or more flexibility, or more money." />
-    <meta property="og:site_name" content="kate-preston.co.uk" />
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{{content.title}}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="http://www.kate-preston.co.uk/whynow.html" />
+      <meta property="og:description" content="{{content.long_blurb}}" />
+      <meta property="og:site_name" content="kate-preston.co.uk" />
+    {% endif %}
+  {% endfor %}
   </head>
   <body>
     <div class="content-container">

@@ -11,7 +11,7 @@ nunjucks.configure((path.join(__dirname, "../templates")), {
 function renderBlog() {
   for (let content of contentList) {
     const contentPath = `${content.url}.njk`
-    const fileContent = (nunjucks.render(contentPath, {navList: navList}))
+    const fileContent = (nunjucks.render(contentPath, {navList: navList, contentList: contentList}))
     const filePath = `./${content.url}.html`
     fs.writeFile(filePath, fileContent, (err) => {if (err) throw err})
   }

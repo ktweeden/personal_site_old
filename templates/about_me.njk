@@ -32,17 +32,7 @@
       <div class="title">
         <h2>About me</h2>
       </div>
-      <nav class="nav-bar">
-        <li class="nav-link">
-          <a href="/">Home</a>
-        </li>
-        <li class="nav-link">
-          <a href="/about_me.html">About Me</a>
-        </li>
-        <li class="nav-link hidden">
-          <a href="/projects.html">Projects</a>
-        </li>
-      </nav>
+      {% include "./partials/_navigation.njk" %}
       <div class="content small-content">
         <p>
           Hello! I'm Kate Preston, a person living in Edinburgh with my husband and daughter.
@@ -53,17 +43,7 @@
           I enjoy cooking, eating, traveling, reading, knitting, and most of all, sleeping.
         </p>
       </div>
-      <footer>
-        <a href="https://github.com/ktweeden">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/ktweeden">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/kate_l_preston/">
-          <i class="fab fa-instagram right-padding"></i>
-        </a>
-      </footer>
+      {% include "./partials/_footer.njk" %}
     </div>
   </body>
 </html>

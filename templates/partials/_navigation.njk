@@ -1,0 +1,7 @@
+<nav class="nav-bar">
+  {% for link in navList %}
+    <li class="nav-link">
+      <a href="{{link.url}}">{{link.title}}</a>
+    </li>
+  {% endfor %}
+</nav>

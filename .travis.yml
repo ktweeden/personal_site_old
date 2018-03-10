@@ -4,7 +4,7 @@ script:
   - env
   - node ./build/template_render
   - ./node_modules/.bin/node-sass scss/main.scss css/main.css
-  - ./node_modules/.bin/node-sass scss/content_pages.scss css/content_pages.scss
+  - ./node_modules/.bin/node-sass scss/content_pages.scss css/content_pages.css
 
 deploy:
   provider: pages

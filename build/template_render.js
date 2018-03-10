@@ -16,7 +16,9 @@ function renderBlog() {
     const fileContent = (nunjucks.render(contentPath, {navList: navList, contentList: contentList}))
     const filePath = `./${content.url}.html`
     console.log(filePath)
-    fs.writeFile(filePath, fileContent, (err) => {if (err) throw err})
+    fs.writeFileSync(filePath, fileContent)
+    console.log(fs.readFileSync(filePath))
+    console.log("\n\n\n\n\n\n\n")
   }
 }
 

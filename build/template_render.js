@@ -5,7 +5,7 @@ const fs = require("fs")
 const path = require("path")
 
 nunjucks.configure((path.join(__dirname, "../templates")), {
-  autoescape: true,
+  autoescape: false,
 })
 
 function renderBlog() {

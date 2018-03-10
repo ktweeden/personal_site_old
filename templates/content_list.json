@@ -1,11 +1,19 @@
 [
   {
+    "title": "CodeClan Weeks 3-5: SQL, Ruby and Giving Myself Credit",
+    "url": "wk_3_4_5_review",
+    "short_blurb": "Over weeks three and four of my course at CodeClan we moved from things I felt comfortable with, loops and control flow, to things I felt sure I could learn.",
+    "long_blurb": "Over weeks three and four of my course at CodeClan we moved from things I felt comfortable with, loops and control flow, to things I felt sure I could learn, classes and object oriented programming, to things I didn't know enough about to even begin imagining how I might fare, SQL.",
+    "date": "Sunday, 4th March",
+    "topics": ["CodeClan", "Learning", "Ruby", "SQL"]
+  },
+  {
     "title": "CodeClan Weeks 1-2: Learning to Pace Myself",
     "url": "wk_1_2_review",
     "short_blurb": "On the evening of my second day at CodeClan I ended up at hospital at midnight because my eight month old daughter was having trouble breathing. She was fine, but we all got about three hours of sleep.",
     "long_blurb": "On the evening of my second day at CodeClan I ended up at hospital at midnight because my eight month old daughter was having trouble breathing. She was fine, but we all got about three hours of sleep. The next few nights I stayed up hours later than I usually would reading around the topics we'd covered in class. That weekend I caught the flu.",
     "date": "Sunday, 11th February",
-    "topics": ["CodeClan", "Learning"]
+    "topics": ["CodeClan", "Learning", "Ruby"]
   },
   {
     "title": "Why This, Why Now?",

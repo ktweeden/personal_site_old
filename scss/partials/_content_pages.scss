@@ -10,7 +10,7 @@
   justify-content: center;
 
   @include mq-web-layout {
-    grid-template: auto 1fr 10% /10% 40% 40% 10%;
+    grid-template: auto 1fr 10% /10% 50% 30% 10%;
     grid-template-areas:
       "lmargin title navigation rmargin"
       "lmargin content content rmargin"

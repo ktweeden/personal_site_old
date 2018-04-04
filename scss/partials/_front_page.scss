@@ -125,9 +125,7 @@
 
   footer {
     grid-area: footer;
-    @include mq-phone-layout {
-      background-color: white;
-    };
+    background-color: white;
   }
 
 }

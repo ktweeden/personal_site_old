@@ -9,16 +9,11 @@ nunjucks.configure((path.join(__dirname, "../templates")), {
 })
 
 function renderBlog() {
-  console.log(contentList)
   for (let content of contentList) {
     const contentPath = `${content.url}.njk`
-    console.log(contentPath)
     const fileContent = (nunjucks.render(contentPath, {navList: navList, contentList: contentList}))
     const filePath = `./${content.url}.html`
-    console.log(filePath)
     fs.writeFileSync(filePath, fileContent)
-    console.log(fs.readFileSync(filePath).toString())
-    console.log("\n\n\n\n\n\n\n")
   }
 }
 

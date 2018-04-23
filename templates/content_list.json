@@ -1,5 +1,13 @@
 [
   {
+    "title": "CodeClan Project: Food Tracker Android App",
+    "url": "food_tracker_android_app",
+    "short_blurb": "At the end of the Java module at CodeClan I built a food tracking app for android. I wrote about the experience of putting it together over on the CodeClan website.",
+    "long_blurb": "At the end of the Java module at CodeClan I built a food tracking app for android. I wrote about the experience of putting it together over on the CodeClan website.",
+    "date": "Monday, 23rd April",
+    "topics": ["CodeClan", "Learning", "Java", "Android"]
+  },
+  {
     "title": "CodeClan Weeks 6-9: Java and Android",
     "url": "wk_6_9_review",
     "short_blurb": "For the past four weeks I’ve been immersed in all things Java. Compared to Ruby, the language we focused on in our first module, Java is strict and fairly verbose.",

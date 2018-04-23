@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    {% include "partials/_content_head.njk" %}
+
+    {% for content in contentList %}
+      {% if content.title == "Making a Food Tracker Android App"%}
+      <title>Making a Food Tracker Android App</title>
+      <meta name="description" content="{{content.short_blurb}}" />
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="{{content.title}}">
+      <meta name="twitter:description" content="{{content.long_blurb}}">
+      <meta name="twitter:creator" content="@ktweeden">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{{content.title}}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="http://www.kate-preston.co.uk/food_tracker_android_app.html" />
+      <meta property="og:description" content="{{content.long_blurb}}" />
+      <meta property="og:site_name" content="kate-preston.co.uk" />
+      {% endif %}
+    {% endfor %}
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="title">
+        <h2>Making a Food Tracker Android App</h2>
+      </div>
+      {% include "./partials/_navigation.njk" %}
+      <article class="content">
+        <p>At the end of the <a href='/wk_6_9_review.html'> Java module</a> at CodeClan
+        I built a food tracking app for android. I wrote about the experience of
+        putting it together over on the <a href='https://codeclan.com/blog/kates-project-diary-an-android-food-tracking-app/'>
+        CodeClan website</a>,  which also includes a little video demoing the app.</p>
+
+        <div class="line"></div>
+
+        Check out the project's source over on <a href='https://github.com/ktweeden/pickle'>Github.</a>
+
+      </article>
+      {% include "./partials/_footer.njk" %}
+    </div>
+  </body>
+</html>

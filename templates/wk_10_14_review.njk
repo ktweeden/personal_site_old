@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "partials/_content_head.njk" %}
+    {% for content in contentList %}
+      {% if content.title == "CodeClan Weeks 10-14: JavaScript"%}
+      <title>CodeClan Weeks 10-14</title>
+      <meta name="description" content="{{content.short_blurb}}" />
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="{{content.title}}">
+      <meta name="twitter:description" content="{{content.long_blurb}}">
+      <meta name="twitter:creator" content="@ktweeden">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{{content.title}}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="http://www.kate-preston.co.uk/wk_10_14_review.html" />
+      <meta property="og:description" content="{{content.long_blurb}}" />
+      <meta property="og:site_name" content="kate-preston.co.uk" />
+    {% endif %}
+  {% endfor %}
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="title">
+        <h2>CodeClan Weeks 10-14: JavaScript</h2>
+      </div>
+      {% include "./partials/_navigation.njk" %}
+      <article class="content">
+      <p>After an intense android project week (which you can read about 
+      over on the <a href="https://codeclan.com/blog/kates-project-diary-an-android-food-tracking-app/">
+      CodeClan blog</a>), we had a week of Computer Science and job prep. 
+      There are lots of terrifying things about swapping careers, but for me one 
+      of the biggest ones was not knowing how to present myself both on paper and 
+      in interviews in a way that was relevant to this industry. At this point, 
+      though, I’d actually already applied and interviewed for a job that I 
+      desperately wanted so I spent a lot of the week wishing I could 
+      retrospectively implement the advice I was getting.</p>
+
+    <p>The following week was the beginning of the JavaScript module. By this 
+    point my cohort and I had been learning for 10 weeks without a break 
+    and everyone was a bit run down. So, although what covered in week 11 wasn’t 
+    necessarily more difficult than things we’d learned before our brains were 
+    fragile and a few of us hit a bit of a wall. For me this manifested as a guilt 
+    spiral where I both felt like I couldn’t maintain the level of extra work and 
+    reading I had been doing, and that I couldn’t slack off because I’d put my 
+    family’s life on hold/ handed over the care of my baby to someone else in 
+    order to do the course.</p>
+
+    <p>The great thing about CodeClan is that your cohort become your support 
+    system and so although we were all melting down, we did it together and 
+    over the course of a couple of weeks made sure to pull each other up. 
+    Teas were made, hugs were given. By the time project week rolled around 
+    most of us were back from the brink.</p>
+
+    <div class="line"></div>
+
+    <p>I’d actually had a stab at learning JavaScript a couple of years ago. 
+    Although I certainly wasn’t writing it in the best way or understanding 
+    everything that was happening having had some exposure was really helpful 
+    when it came to some of the more tricky concepts.</p>
+
+    <p>I’ve loved the JavaScript module. Java was fine but a bit too verbose and 
+    (dare I say) boring. JavaScript feels mildly anarchic, which I dig, but it’s 
+    not just the flexibility that interests me. I find the whole ecosystem 
+    surrounding JavaScript really fascinating, and learning about various tools 
+    and frameworks is as interesting as the language itself.</p>
+
+    <p>If you’ll indulge the humanities student in me, another thing about JavaScript 
+    that really interests me is it’s place in web culture. Or rather, its place 
+    transmitting, displaying, and generally corralling web culture (or I guess 
+    just, culture). As the language that powers what can be achieved in the browser 
+    it’s specs define not just the what’s and how’s of syntax, but dictate who can 
+    access content, to what extent various companies can get a stronghold on these 
+    modes of communication, what parts of our shared culture should be preserved, 
+    and what is allowed to disappear or break. If the TC39 committee were to declare 
+    a certain bit of syntax defunct, and browsers responded by removing their support 
+    for that syntax, swathes of websites would break (depending on the specifics) and 
+    we would lose access to pieces of our shared culture.</p>
+
+    <div class="line"></div>
+
+    <p>Throughout the JavaScript module I got a little obsessed with turning my 
+    homeworks into deployed apps on <a href="https://glitch.com/">glitch</a>. I took a homework where we were supposed 
+    to practice API calls and made it into a <a href="https://pokemon-top-trumps.glitch.me/">pokemon top trumps game</a>, and during a 
+    lab a classmate and I put together an <a href="https://etch-a-sketch.glitch.me/">etch-a-sketch.</a></p>
+
+    <p>We rounded off this module with a group project. It was a very different 
+    experience to the projects that had come before and in the end was more about 
+    learning how to work in a team of developers than it was about build something 
+    shiny. My team and I put together a travel dashboard which aimed to help users 
+    plan trips. We alternated between mob programming, where the four of us sat 
+    around one machine and developed as a group, and paring. I was pretty proud with 
+    what our group produced, but even more so with how we conducted ourselves and 
+    how easily we worked together.</p>
+
+
+      </article>
+      {% include "./partials/_footer.njk" %}
+    </div>
+  </body>
+</html>

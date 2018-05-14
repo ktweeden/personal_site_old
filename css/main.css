@@ -8,7 +8,7 @@
     .nav-link {
       padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
-    color: #fc21c6;
+    color: #eb5e8a;
     transition: 0.5s;
     text-decoration: none; }
 
@@ -41,7 +41,7 @@ footer {
         margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
-      color: #fc21c6;
+      color: #eb5e8a;
       transition: 0.3s; } }
 
 .hidden {
@@ -50,7 +50,6 @@ footer {
 @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
   .right-padding {
     padding-right: 2rem; } }
-
 .left-padding {
   padding-left: 2rem; }
 
@@ -95,7 +94,7 @@ h3 {
     .nav-link {
       padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
-    color: #fc21c6;
+    color: #eb5e8a;
     transition: 0.5s;
     text-decoration: none; }
 
@@ -128,7 +127,7 @@ footer {
         margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
-      color: #fc21c6;
+      color: #eb5e8a;
       transition: 0.3s; } }
 
 .hidden {
@@ -137,7 +136,6 @@ footer {
 @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
   .right-padding {
     padding-right: 2rem; } }
-
 .left-padding {
   padding-left: 2rem; }
 
@@ -191,6 +189,11 @@ h3 {
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
       .container .header {
         margin: 2rem 0; } }
+    .container .header h1 {
+      font-family: "Roboto", sans-serif;
+      background: linear-gradient(45deg, #eb06f7, #f69009, #c9063c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .container .nav-bar {
     grid-area: nav;
     display: flex;
@@ -203,10 +206,8 @@ h3 {
       .container .nav-bar {
         justify-content: flex-end; } }
   .container .blog-feed {
-    grid-area: content; }
-    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
-      .container .blog-feed {
-        padding-bottom: 4rem; } }
+    grid-area: content;
+    padding-bottom: 4rem; }
     .container .blog-feed .blog-snippet {
       display: flex; }
       @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
@@ -217,15 +218,17 @@ h3 {
       @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
         .container .blog-feed .blog-snippet {
           flex-direction: column;
-          padding-bottom: 1rem; } }
+          padding-bottom: 2rem; } }
       .container .blog-feed .blog-snippet .blog-title {
         order: 1;
-        flex: 1; }
+        flex: 1;
+        margin-right: 1rem; }
         @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
           .container .blog-feed .blog-snippet .blog-title {
-            color: #0be6c8; } }
+            color: #47a79a;
+            margin-bottom: 0.5rem; } }
         .container .blog-feed .blog-snippet .blog-title h2:hover {
-          color: #0be6c8;
+          color: #47a79a;
           transition: 0.3s; }
       .container .blog-feed .blog-snippet .blog-blurb-long {
         order: 2;
@@ -247,11 +250,14 @@ h3 {
         order: 3;
         width: 100%;
         text-align: right; }
+        @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
+          .container .blog-feed .blog-snippet time {
+            display: none; } }
   .container a {
     text-decoration: none;
     color: black; }
   .container footer {
-    grid-area: footer; }
-    @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
-      .container footer {
-        background-color: white; } }
+    grid-area: footer;
+    background-color: white; }
+
+/*# sourceMappingURL=main.css.map */

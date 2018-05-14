@@ -1,4 +1,11 @@
-[
+[ {
+    "title": "CodeClan Weeks 10-14: JavaScript",
+    "url": "wk_10_14_review",
+    "short_blurb": "The following week was the beginning of the JavaScript module. By this point my cohort and I had been learning for 10 weeks without a break and everyone was a bit run down.",
+    "long_blurb":"The following week was the beginning of the JavaScript module. By this point my cohort and I had been learning for 10 weeks without a break and everyone was a bit run down. So, although what covered in week 11 wasn’t necessarily more difficult than things we’d learned before our brains were fragile and a few of us hit a bit of a wall.",
+    "date": "Tuesday, 14th May",
+    "topics": ["CodeClan", "Learning", "JavaScript"]
+  },
   {
     "title": "CodeClan Project: Food Tracker Android App",
     "url": "food_tracker_android_app",

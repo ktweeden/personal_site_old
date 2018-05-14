@@ -8,7 +8,7 @@
     .nav-link {
       padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
-    color: #fc21c6;
+    color: #eb5e8a;
     transition: 0.5s;
     text-decoration: none; }
 
@@ -41,7 +41,7 @@ footer {
         margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
-      color: #fc21c6;
+      color: #eb5e8a;
       transition: 0.3s; } }
 
 .hidden {
@@ -50,7 +50,6 @@ footer {
 @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
   .right-padding {
     padding-right: 2rem; } }
-
 .left-padding {
   padding-left: 2rem; }
 
@@ -97,7 +96,7 @@ h3 {
   @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
     .content-container {
       grid-template: auto auto 1fr 10% /10% 40% 40% 10%;
-      grid-template-areas: "ltmargin ltmargin navigation navigation" "lmargin title title rmargin" "lmargin content content rmargin" "footer footer footer footer"; } }
+      grid-template-areas: "ltmargin navigation navigation navigation" "lmargin title title rmargin" "lmargin content content rmargin" "footer footer footer footer"; } }
   .content-container .title {
     align-self: center;
     grid-area: title; }
@@ -105,10 +104,11 @@ h3 {
       .content-container .title {
         margin-top: 1rem; } }
     .content-container .title h2 {
-      font-family: "Noto Serif", serif; }
+      font-family: "Noto Serif", serif;
+      padding-top: 0.5rem; }
       @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
         .content-container .title h2 {
-          font-size: 3rem; } }
+          font-size: 1.5rem; } }
   .content-container .nav-bar {
     grid-area: navigation;
     display: flex;
@@ -133,12 +133,12 @@ h3 {
       .content-container .content {
         padding: 0 0 4rem 0; } }
     .content-container .content .line {
-      border: 1px dashed #fc21c6;
+      border: 1px dashed #eb5e8a;
       width: 100%;
       margin: 2rem 0; }
     .content-container .content a {
       text-decoration: none;
-      color: #0be6c8; }
+      color: #47a79a; }
   .content-container footer {
     grid-area: footer; }
     @media only screen and (orientation: portrait) and (max-device-width: 604px), only screen and (orientation: landscape) and (max-device-width: 604px) {
@@ -155,7 +155,7 @@ h3 {
     .nav-link {
       padding: 1rem 1rem 0 0rem; } }
   .nav-link a:hover {
-    color: #fc21c6;
+    color: #eb5e8a;
     transition: 0.5s;
     text-decoration: none; }
 
@@ -188,7 +188,7 @@ footer {
         margin-top: 0.5rem; } }
   @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
     footer a:hover {
-      color: #fc21c6;
+      color: #eb5e8a;
       transition: 0.3s; } }
 
 .hidden {
@@ -197,7 +197,6 @@ footer {
 @media only screen and (orientation: portrait) and (min-device-width: 605px), only screen and (orientation: landscape) and (min-device-width: 605px) {
   .right-padding {
     padding-right: 2rem; } }
-
 .left-padding {
   padding-left: 2rem; }
 
@@ -231,3 +230,5 @@ h3 {
   font-size: 1.2rem;
   padding: 0;
   margin: 0; }
+
+/*# sourceMappingURL=content_pages.css.map */

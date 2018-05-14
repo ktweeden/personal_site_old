@@ -36,6 +36,13 @@
      @include mq-phone-layout {
        margin: $large-gap 0;
      };
+
+     h1 {
+       font-family: $content-font;
+       background: linear-gradient(45deg, #eb06f7, #f69009, #c9063c );
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+     }
    }
 
 
@@ -69,16 +76,18 @@
 
       @include mq-phone-layout {
         flex-direction: column;
-        padding-bottom: $medium-gap;
+        padding-bottom: $medium-gap*2;
       };
 
 
       .blog-title {
         order: 1;
         flex: 1;
+        margin-right: $medium-gap;
 
         @include mq-phone-layout {
           color: $secondary-colour;
+          margin-bottom: $small-gap;
         };
 
         h2:hover {
@@ -114,6 +123,10 @@
         order: 3;
         width: 100%;
         text-align: right;
+
+        @include mq-phone-layout{
+          display: none;
+        };
       }
     }
   }

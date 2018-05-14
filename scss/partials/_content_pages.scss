@@ -20,7 +20,7 @@
   @include mq-phone-layout {
     grid-template: auto auto 1fr 10% /10% 40% 40% 10%;
     grid-template-areas:
-      "ltmargin ltmargin navigation navigation"
+      "ltmargin navigation navigation navigation"
       "lmargin title title rmargin"
       "lmargin content content rmargin"
       "footer footer footer footer";
@@ -37,9 +37,10 @@
 
     h2 {
       font-family: $header-font;
+      padding-top: $small-gap;
 
       @include mq-phone-layout {
-        font-size: 3rem;
+        font-size: 1.5rem;
       };
     }
   }

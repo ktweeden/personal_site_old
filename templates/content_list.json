@@ -1,4 +1,12 @@
 [ {
+  "title": "Serverless Architecture: A Short Explainer for Beginners",
+  "url": "serverless_explainer",
+  "short_blurb": "In this post I’m going to give a brief explanation of what serverless means and set out an example to help illustrate the practical difference between serverless and more traditional servers.",
+  "long_blurb":"In this post I’m going to give a brief explanation of what serverless means, set out an example to help illustrate the practical difference between serverless and more traditional servers, highlight the benefits and pitfalls of choosing serverless, and then round up a few resources where you can continue your learning.",
+  "date": "Wednesday, 18th August 2021",
+  "topics": ["Architecture", "Explainer", "Beginners"]
+  },
+  {
     "title": "CodeClan Weeks 10-14: JavaScript",
     "url": "wk_10_14_review",
     "short_blurb": "The following week was the beginning of the JavaScript module. By this point my cohort and I had been learning for 10 weeks without a break and everyone was a bit run down.",

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113128532-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113128532-1');
+</script>
+<link rel="stylesheet" href="./css/content_pages.css" type="text/css" >
+<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    
+      
+      <title>Serverless Architecture: A Short Explainer for Beginners</title>
+      <meta name="description" content="In this post I’m going to give a brief explanation of what serverless means and set out an example to help illustrate the practical difference between serverless and more traditional servers." />
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="Serverless Architecture: A Short Explainer for Beginners">
+      <meta name="twitter:description" content="In this post I’m going to give a brief explanation of what serverless means, set out an example to help illustrate the practical difference between serverless and more traditional servers, highlight the benefits and pitfalls of choosing serverless, and then round up a few resources where you can continue your learning.">
+      <meta name="twitter:creator" content="@ktweeden">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Serverless Architecture: A Short Explainer for Beginners" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="http://www.kate-preston.co.uk/serverless_explainer.html" />
+      <meta property="og:description" content="In this post I’m going to give a brief explanation of what serverless means, set out an example to help illustrate the practical difference between serverless and more traditional servers, highlight the benefits and pitfalls of choosing serverless, and then round up a few resources where you can continue your learning." />
+      <meta property="og:site_name" content="kate-preston.co.uk" />
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="title">
+        <h2></h2>
+      </div>
+      <nav class="nav-bar">
+  
+    <li class="nav-link">
+      <a href="/">Home</a>
+    </li>
+  
+    <li class="nav-link">
+      <a href="/about_me.html">About Me</a>
+    </li>
+  
+</nav>
+
+      <article class="content">
+
+        <p>Who is this for: this article is aimed at junior engineers who are 
+        beginning to think about the infrastructure that sits behind their code. 
+        It will also be useful if you’re a more experienced engineer who wants to 
+        understand the use cases for serverless architecture.</p>
+        
+        <div class="line"></div>
+
+        <h3>What we mean when we talk about serverless</h3>
+        <p>One of the main things that tripped me up when I first started hearing about 
+        “serverless” architecture was the “less” part. Did people really mean no servers? 
+        And if so, where was the code being put?? And, what did it mean to be serverfull? 
+        It didn’t help that people also talked about serverless “functions” or “lambdas”, 
+        terms for which my working definition didn’t seem to make sense in this context.</p>
+
+        <p>In this post I’m going to give a brief explanation of what serverless means, 
+        set out an example to help illustrate the practical difference between serverless 
+        and more traditional servers, highlight the benefits and pitfalls of choosing 
+        serverless, and then round up a few resources where you can continue your learning.</p>
+
+        <p>It probably makes sense to first ensure we’re all on the same page about what a 
+        server even is. A server can refer to one of two things: a program that provides 
+        some sort of functionality to a client or the physical or virtual machine on which 
+        that program is hosted. For example, you might have a React app (client) that gets 
+        data from an API (server), but in this article when I write “server” I’m talking 
+        about the place where we put our program, not the program itself.</p>
+
+        <p>A serverless system is one in which you don’t have to manage the machine that 
+        your program is hosted on. </p>
+
+        <div class="line"></div>
+
+        <h3>Serverless in practise</h3>
+
+        <p>To help illustrate what this definition means, let’s walk through an example.</p>
+
+        <h4>Setting up</h4>
+
+        <p>Let’s imagine that we want to build an API. We’re going to make two versions of 
+        it: the code is exactly the same on each, but one is hosted on a traditional server and 
+        one is deployed to one of the many serverless solutions available, such as Google Cloud 
+        Functions or AWS Lambda. </p>
+
+        <p>In our more traditional setup you would get yourself a server, this could be a physical 
+        computer or a virtual machine on AWS, set it up with everything your program needs in order 
+        to run, from the operating system to specific package dependencies, and then put your program 
+        on it and start it up. You, or someone in your organisation, would then be responsible for 
+        maintaining that server: upgrading any software when needed, monitoring memory usage, ensuring 
+        that it’s still running, etc.</p>
+
+        <p>In our serverless example the setup is much more simple. Generally you will choose a serverless 
+        function provider, create a new function and configure a small number of settings to reflect 
+        what you are going to put on that function. These settings will usually be the language and 
+        version that your program needs to run. You might also configure timeout settings, but overall 
+        there’s much less to set up with this approach. Finally, you give the serverless service provider 
+        the code you want it to run, et voila. You might need to tweak some of the timeout settings in the 
+        future, but wouldn’t need to actively manage a specific machine/server.</p>
+
+        <h4>Making an HTTP request</h4>
+        <p>Your server is set up and you’re ready to start making requests to the API you’ve written, so 
+        what happens next? In a traditional server set up, if the server is on and your program is 
+        running then when you make a request to one of the endpoints, the program handles it and 
+        responds. The server stays on, waiting for another request regardless of how long it’s been 
+        since the last one. If the server is off or your program isn’t running on it, then when you 
+        make a request you’ll just get a timeout or error: your server is not going to respond until 
+        someone comes along and restarts or fixes it.</p>
+
+        <p>With a serverless set up, if a server with your code is up and running then the behaviour 
+        is very similar to the traditional architecture at first. The program handles the request and 
+        responds. Then it waits for a little while to see if it’s going to get another request and 
+        after a certain amount of time it will “spin down”, or turn off. If you then make another 
+        request, a server will start up your program, handle the request, wait for a bit, and then spin 
+        down again.</p>
+
+        <p>So, the main difference here is that a traditional server is always on, waiting for your 
+        program to be invoked. If it’s off, it doesn’t work. On the other hand, serverless functions 
+        only start up when they are needed and will not be running in the interim.</p>
+
+        <h4>Responding to scale</h4>
+        <p>With the example above, we can start to see some of the benefits of serverless architecture: 
+        you’re not wasting resources by running something that’s not being used. Another benefit comes 
+        in how this setup handles scale.</p>
+
+        <p>Let’s go back to our traditional server. It’s on, hanging around waiting, and then suddenly it gets 10000 requests over the course of 5 seconds. What happens? It might be able to handle them at first, but some requests will likely timeout, and your program might even crash. To enable it to handle more requests you might need to increase the number of servers with this program on it, and introduce something that could spread the load evenly across those servers.</p>
+
+        <p>If this same thing happened with our serverless example then it would automatically spin up (start) however many machines with your program on it are needed in order to handle the load. If the number of requests continued at this volume, then it would keep all the servers running, but if it decreased again then it would spin down the servers in response.</p>
+        <p>So, serverless functions are only on when they are needed, and as many will run as is necessary to handle the load at any given time.</p>
+
+        <div class="line"></div>
+
+        <h3>Why might you not use serverless?</h3>
+
+        <p>So far, serverless architecture sounds pretty great. There are, however, some tradeoffs to think about when trying to decide if serverless is the right path for your use case.</p>
+        <p>Firstly, the downside of your program booting up only when it’s needed is that there is often a lag between when you do the thing that wakes up your server and the program actually being ready to do its thing. The bigger your program and the more dependencies it has, the longer this is going to take.</p>
+        <p>This might not be a reason to not use serverless, but more of a consideration to make when designing your system: serverless architecture lends itself to a system that is composed of smaller, independently runnable parts. So for example, you might decide to create a handful of serverless functions that can trigger one another via api calls or by publishing and subscribing to event topics, rather than one big program that does everything.</p>
+        <p>The other thing to remember is that your program will not be running continuously, so you can’t rely on it persisting data in memory. This means that if you have some information that your program needs to remember each time it’s triggered, this will either need to be stored somewhere else. This might be in  a database or given as an input, such as being part of the API request or message that wakes the function up. If this is central to your application, it may be that your use case is better suited to a persistent server that will always be on.</p>
+
+        <div class="line"></div>
+
+        <h3>In conclusion</h3>
+        <p>So to recap, serverless architecture refers to a set up where your program isn’t hosted on one server that needs maintaining over time. Rather, you define some basic requirements your program has in order to run, such as language version, and give the service the code or compiled binary that it should run. Then, the serverless service you’re using will handle creating and destroying machines running your program in response to scale.</p>
+
+        <p>Now you have a basic understanding of what serverless means, why not cement that knowledge by<a href="https://cloud.google.com/functions/docs/tutorials/http" target="_blank"> setting up a simple, API triggered serverless function on Google Cloud Platform.</a></p>
+
+      </article>
+      <footer>
+  <a href="https://github.com/ktweeden">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/ktweeden/">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://twitter.com/ktweeden">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/kate_l_preston/">
+    <i class="fab fa-instagram right-padding"></i>
+  </a>
+</footer>
+
+    </div>
+  </body>
+</html>

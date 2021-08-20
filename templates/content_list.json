@@ -11,7 +11,7 @@
     "url": "wk_10_14_review",
     "short_blurb": "The following week was the beginning of the JavaScript module. By this point my cohort and I had been learning for 10 weeks without a break and everyone was a bit run down.",
     "long_blurb":"The following week was the beginning of the JavaScript module. By this point my cohort and I had been learning for 10 weeks without a break and everyone was a bit run down. So, although what covered in week 11 wasn’t necessarily more difficult than things we’d learned before our brains were fragile and a few of us hit a bit of a wall.",
-    "date": "Tuesday, 14th May",
+    "date": "Tuesday, 14th May 2018",
     "topics": ["CodeClan", "Learning", "JavaScript"]
   },
   {
@@ -19,7 +19,7 @@
     "url": "food_tracker_android_app",
     "short_blurb": "At the end of the Java module at CodeClan I built a food tracking app for android. I wrote about the experience of putting it together over on the CodeClan website.",
     "long_blurb": "At the end of the Java module at CodeClan I built a food tracking app for android. I wrote about the experience of putting it together over on the CodeClan website.",
-    "date": "Monday, 23rd April",
+    "date": "Monday, 23rd April 2018",
     "topics": ["CodeClan", "Learning", "Java", "Android"]
   },
   {
@@ -27,7 +27,7 @@
     "url": "wk_6_9_review",
     "short_blurb": "For the past four weeks I’ve been immersed in all things Java. Compared to Ruby, the language we focused on in our first module, Java is strict and fairly verbose.",
     "long_blurb": "For the past four weeks I’ve been immersed in all things Java. Compared to Ruby, the language we focused on in our first module, Java is strict and fairly verbose. At first it seemed to require a lot of extra gumpf than Ruby to achieve basically the same result.",
-    "date": "Wednesday, 4th April",
+    "date": "Wednesday, 4th April 2018",
     "topics": ["CodeClan", "Learning", "Java", "Android"]
   },
   {
@@ -35,7 +35,7 @@
     "url": "wk_3_5_review",
     "short_blurb": "Over weeks three and four of my course at CodeClan we moved from things I felt comfortable with, loops and control flow, to things I felt sure I could learn.",
     "long_blurb": "Over weeks three and four of my course at CodeClan we moved from things I felt comfortable with, loops and control flow, to things I felt sure I could learn, classes and object oriented programming, to things I didn't know enough about to even begin imagining how I might fare, SQL.",
-    "date": "Sunday, 4th March",
+    "date": "Sunday, 4th March 2018",
     "topics": ["CodeClan", "Learning", "Ruby", "SQL"]
   },
   {
@@ -43,7 +43,7 @@
     "url": "wk_1_2_review",
     "short_blurb": "On the evening of my second day at CodeClan I ended up at hospital at midnight because my eight month old daughter was having trouble breathing. She was fine, but we all got about three hours of sleep.",
     "long_blurb": "On the evening of my second day at CodeClan I ended up at hospital at midnight because my eight month old daughter was having trouble breathing. She was fine, but we all got about three hours of sleep. The next few nights I stayed up hours later than I usually would reading around the topics we'd covered in class. That weekend I caught the flu.",
-    "date": "Sunday, 11th February",
+    "date": "Sunday, 11th February 2018",
     "topics": ["CodeClan", "Learning", "Ruby"]
   },
   {
@@ -51,7 +51,7 @@
     "url": "whynow",
     "short_blurb": "A year ago my day job involved listening to other people talk about all the reasons their current job was unsatisfying and why retraining as a software developer was the right move for them.",
     "long_blurb": "A year ago my day job involved listening to other people talk about all the reasons their current job was unsatisfying and why retraining as a software developer was the right move for them. For some people it was about job security, others wanted a job with more of a challenge, or more flexibility, or more money.",
-    "date": "Thursday, 24th January",
+    "date": "Thursday, 24th January 2018",
     "topics": ["CodeClan", "Learning"]
   }
 ]
